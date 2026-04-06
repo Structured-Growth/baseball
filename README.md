@@ -165,7 +165,7 @@ These definitions describe the columns returned in `statcast_raw_data.csv` for t
 Install the dependency:
 
 ```python
-!pip install pybaseball
+!python -m pip install pybaseball
 ```
 
 Then run the script:
@@ -175,3 +175,14 @@ Then run the script:
 ```
 
 If `google.colab.files` is available, the CSV files will download automatically.
+
+## Run From GitHub In Google Colab
+
+Clone the full repo, install the dependency, and run the script:
+
+```python
+!git clone https://github.com/Structured-Growth/baseball.git
+%cd baseball
+!python -m pip install pybaseball
+!python statcast_raw_called_pitches.py
+```
